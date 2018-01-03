@@ -29,5 +29,9 @@ namespace WebApplication.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<WebApplication.Models.Employee> Employees { get; set; }
+
+        public System.Data.Entity.DbSet<WebApplication.Models.Location> Locations { get; set; }
     }
 }

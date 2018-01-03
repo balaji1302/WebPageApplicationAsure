@@ -1,0 +1,58 @@
+﻿@model WebApplication.Models.Location
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Location</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationStreetAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationStreetAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationCity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationCity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationZipCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationZipCode)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
